@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+   flex-direction: column;
+  
+    background-image: url(./pic/output\ \(3\).jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover; 
+    height: 100vh; 
+}
+nav{
+    position: fixed;
+    width: 100%;
+   height: 8vh;
+    left: -5vw;
+    background-color: #34343c27    ;
+}
+
+nav div ,nav{
+    display: flex;
+
+}
+nav div ul{
+    display: flex;
+   justify-self: center;
+   list-style-type: none;
+}
+nav button{
+    margin:1vw;
+    border: 0;
+    background-color:#cfc3b6;
+    color:#131416;
+    font-weight: 500;
+    border: 0;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    width: 7vw;
+    flex-wrap: wrap;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    flex-wrap: wrap;
+    
+  
+  
+}
+.z{
+    margin-top:-0.5vw;
+    width:6vw;  
+}
+.c{
+    width:1vw;
+    margin-top: 0.2vh;
+    margin-right: 0.4vw;
+}
+.divided{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5vw;
+}
+
+
+.body-header {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+ .head1, .head2, .head3 {
+    display: flex;
+    max-width: fit-content;
+    position: relative;
+    bottom: -30vh; 
+    right: -5vw; 
+    flex-wrap: wrap;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.head1 {
+    margin: 1vw;
+}
+.head2{
+    margin: 0.2vw;
+}
+
+.button-shop {
+    display: flex;
+    max-width: fit-content;
+    position: relative;
+    bottom: -15vw;
+    right: 35vw;
+    background-color: rgb(8, 5, 0);
+    color: aliceblue;
+    border: 0;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+.button-shop:hover , button:hover {
+    cursor: pointer;
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 0.4s ease-in-out;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    margin: 0.5vw;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+ .h1{
+    margin-top:5vh ;
+    font-size: xx-larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+article{
+    margin: 2vw;
+    margin-top:8vh;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    
+    
+}
+article .div{
+    border-style:groove;
+    border-color: aliceblue;
+}
+article p{
+    margin-bottom: 2vh;
+}
+article h1 {
+margin-bottom: 3vh;
+}
+article img{
+    width: 100%;
+ border-style:groove;
+ border-color: aliceblue;
+}
+.flooter{
+    display: flex;
+    justify-content: space-between;
+    margin:0 0.5vw .5vh;
+}
+.price{
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    margin-top: 1.5vh;
+    
+}
+article button{
+    background-color: rgb(240, 240, 240);
+    border-radius:0.5vw;
+    border: 0;
+    padding-right: 0.2vw;
+    margin-bottom: 1vh;
+   
+    
+   
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+article button img{
+    
+  width:2.5vw;
+  border: 0;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 8vh;
+    background-color: #2a3439    ;
+    height: 10vw;
+    flex-wrap: wrap;
+}
+.footer-content{
+    display: flex;
+    
+ 
+    margin-right: 15vw;
+   
+}
+footer h3{
+    margin-top:3vh ;
+    
+    font-size: xx-larger;
+    color: #be947f;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer p{
+   
+    margin: 2vh;
+    margin-top: 10vh;
+    color: #b67c6c;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+article img:hover{
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        background-size: cover; 
+        height: 100vh; 
+    }
+
+    button, .head1, .head2, .head3 {
+        flex-direction: column;
+        bottom: -20vh;
+        right: 0; 
+    }
+
+    button {
+        padding: 1.5vw; 
+    }
+   footer{
+    height: 50vw;
+   
+   }
+}
+
+@media (min-width: 769px) {
+    header {
+        height: 100vh; /* على الشاشات الكبيرة، يمكن أن يكون الارتفاع 100% */
+    }
+
+    button {
+        right: -5vw; /* ضبط الأزرار بشكل أفضل على الشاشات الكبيرة */
+    }
+}
